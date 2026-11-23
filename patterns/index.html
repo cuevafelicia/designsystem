@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Pattern | Side Quest Simple Design System</title>
+  <meta name="description" content="Side Quest case study page pattern with a live preview at three sizes.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#FAF5D6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Design system">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>Design System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdsNav" aria-controls="sdsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sdsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-found" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundations</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-found"><li><a class="dropdown-item" href="../foundations/color.html">1.1 Color</a></li><li><a class="dropdown-item" href="../foundations/typography.html">1.2 Typography</a></li><li><a class="dropdown-item" href="../foundations/logo.html">1.3 Logo</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-comp" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-comp"><li><a class="dropdown-item" href="../components/button.html">2.1 Button</a></li><li><a class="dropdown-item" href="../components/navbar.html">2.2 Navbar</a></li><li><a class="dropdown-item" href="../components/card.html">2.3 Card</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link active" href="../patterns/index.html" aria-current="page">Page Pattern</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent" href="../patterns/case-study.html">Live page <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <div class="container">
+      <div class="stop-pin"><span class="pin" aria-hidden="true"><span>3.1</span></span><span class="eyebrow">Page Pattern</span></div>
+      <h1>Page Pattern</h1>
+      <p class="lead">A UX case study page for my capstone, Side Quest: the Figma layout, live in the browser at desktop, tablet and phone sizes.</p>
+      <div><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Figma &gt; Designs: Case Study - Desktop, Tablet, Phone</span><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Figma &gt; Grids and Specs</span></div>
+      <nav class="toc" aria-label="On this page"><a href="#preview">Live layout</a><a href="#structure">Grid</a><a href="#used">Components</a><a href="#page-a11y">Accessibility</a></nav>
+    </div>
+  </header>
+  <section class="doc-section" id="preview" aria-labelledby="preview-h">
+    <div class="container">
+      <p class="eyebrow">Live layout</p>
+      <h2 id="preview-h">The case study, built from the tokens</h2>
+      <p class="section-intro">The Figma case study design (Designs page) rebuilt with Bootstrap 5, <code>tokens.css</code> and the components in this system. Switch sizes to compare it with each Figma frame.</p>
+<div class="d-flex flex-wrap align-items-center gap-3">
+  <div class="device-toggle" role="group" aria-label="Preview size">
+    <button type="button" data-w="1440" aria-pressed="true"><i class="bi bi-display" aria-hidden="true"></i> Desktop</button>
+    <button type="button" data-w="768" aria-pressed="false"><i class="bi bi-tablet" aria-hidden="true"></i> Tablet</button>
+    <button type="button" data-w="375" aria-pressed="false"><i class="bi bi-phone" aria-hidden="true"></i> Phone</button>
+  </div>
+  <a class="btn btn-fc ms-md-auto" href="case-study.html">Open the full page <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+</div>
+<div class="device-frame" id="previewShell">
+  <div class="bar" aria-hidden="true"><i style="background:#E31C5E"></i><i style="background:#E8DB7D"></i><i style="background:#558C8C"></i><span class="ms-2" id="previewLabel">case-study.html @ 1440px</span></div>
+  <div id="previewWrap" style="overflow:hidden;margin:0 auto"><iframe id="previewFrame" src="case-study.html" title="Live preview of the Side Quest case study page" loading="lazy"></iframe></div>
+</div>
+<p class="small text-body-secondary mt-3 mb-0">This is the real page, scaled to fit. Scroll inside the frame. Compare it with the Desktop, Tablet and Phone frames on the Figma Designs page.</p>
+    </div>
+  </section>
+  <section class="doc-section" id="structure" aria-labelledby="structure-h">
+    <div class="container">
+      <p class="eyebrow">Layout</p>
+      <h2 id="structure-h">Grid and spacing</h2>
+      <p class="section-intro">Bootstrap's 12-column grid with 24px gutters (<code>--space-gutter</code>). Column spans for each breakpoint come from the Grids and Specs page in Figma.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Layout by breakpoint</caption><thead><tr><th scope="col">Section</th><th scope="col">Desktop</th><th scope="col">Tablet</th><th scope="col">Phone</th></tr></thead><tbody><tr><td>Container</td><td>1320px, 60px margins</td><td>720px, 24px margins</td><td>Full width, 12px margins</td></tr><tr><td>Section padding</td><td>96px <code>space/section</code></td><td>80px</td><td>64px</td></tr><tr><td>Hero</td><td>Text 6 col + art 6 col</td><td>Stacked</td><td>Stacked, smaller orbit</td></tr><tr><td>Project details</td><td>3 items x 4 col</td><td>3 items x 4 col</td><td>6 + 6, then 12</td></tr><tr><td>Problem</td><td>Text 6 col, 1 col offset, challenge 5 col</td><td>Stacked</td><td>Stacked</td></tr><tr><td>Main quests</td><td>3 cards x 4 col</td><td>6 + 6, then 12</td><td>12 each</td></tr><tr><td>Research stats</td><td>4 x 3 col</td><td>4 x 3 col</td><td>2 x 2 (6 col)</td></tr><tr><td>Insights</td><td>4 cards x 3 col</td><td>2 x 2 (6 col)</td><td>12 each</td></tr><tr><td>Process steps</td><td>4 x 3 col</td><td>2 x 2</td><td>2 x 2</td></tr><tr><td>Solution journeys</td><td>Text 5 col + screens 7 col, alternating</td><td>Stacked</td><td>Stacked, 280px screens</td></tr><tr><td>Results</td><td>Intro 5 col + ratings 7 col, panels 6 + 6</td><td>Stacked, panels 6 + 6</td><td>All stacked</td></tr><tr><td>Reflection</td><td>Title 4 col + accordion 8 col</td><td>Stacked</td><td>Stacked</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="doc-section" id="used" aria-labelledby="used-h">
+    <div class="container">
+      <p class="eyebrow">Inventory</p>
+      <h2 id="used-h">Components used</h2>
+      <p class="section-intro">Every repeated element on the page is an instance of a Figma component. The three documented here are the ones the page leans on most.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Components used</caption><thead><tr><th scope="col">Component</th><th scope="col">Where it is used</th><th scope="col">Docs</th></tr></thead><tbody><tr><td>Navbar + Nav Link</td><td>Top of the page, sticky</td><td><a href="../components/navbar.html">2.2 Navbar</a></td></tr><tr><td>Button</td><td>Hero actions (Primary, Secondary), navbar (Accent), Next project</td><td><a href="../components/button.html">2.1 Button</a></td></tr><tr><td>Card</td><td>Three main quests (Quest), Clues from the interviews (Insight)</td><td><a href="../components/card.html">2.3 Card</a></td></tr><tr><td>Tag, Eyebrow, Section Heading</td><td>Hero tags, every section title</td><td>Typography: Tag, Eyebrow</td></tr><tr><td>Hero Orbit, Sticker, Phone Screen</td><td>Hero art and solution journeys</td><td>Figma: Case Study components</td></tr><tr><td>Stat, Quote Card</td><td>Research band</td><td>Typography: Stat, Quote</td></tr><tr><td>Process Step</td><td>The quest map (4 steps)</td><td>Figma: Case Study components</td></tr><tr><td>Rating Bar, Result Panel</td><td>Results band</td><td>Figma: Case Study components</td></tr><tr><td>Accordion Item</td><td>Reflection</td><td>Bootstrap accordion</td></tr><tr><td>CTA Card, Footer</td><td>End of the page</td><td>Logo: Reverse</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="doc-section" id="page-a11y" aria-labelledby="page-a11y-h">
+    <div class="container">
+      <p class="eyebrow">Accessibility</p>
+      <h2 id="page-a11y-h">Page-level accessibility</h2>
+      <p class="section-intro">On top of each component's own rules, the page as a whole follows these.</p>
+<ul class="a11y-list"><li><i class="bi bi-signpost-split" aria-hidden="true"></i><div><strong>Landmarks and skip link<span class=wcag>2.4.1</span><span class=wcag>1.3.1</span></strong>A skip link, one <code>&lt;nav&gt;</code>, one <code>&lt;main&gt;</code> and a <code>&lt;footer&gt;</code>. Each section is labelled by its heading.</div></li><li><i class="bi bi-list-ol" aria-hidden="true"></i><div><strong>Heading order<span class=wcag>1.3.1</span><span class=wcag>2.4.6</span></strong>One H1 (the project title), an H2 for each section and H3s for cards and journeys. No levels are skipped.</div></li><li><i class="bi bi-image" aria-hidden="true"></i><div><strong>Screens have real alt text<span class=wcag>1.1.1</span></strong>Every app screen describes what it shows. Decorative rings, moons and stickers are hidden from screen readers.</div></li><li><i class="bi bi-arrows-angle-expand" aria-hidden="true"></i><div><strong>Reflow<span class=wcag>1.4.10</span></strong>Everything fits a 320px wide screen without sideways scrolling, and text can zoom to 200%.</div></li><li><i class="bi bi-pause-circle" aria-hidden="true"></i><div><strong>Reduced motion<span class=wcag>2.3.3</span></strong>Tilts, wiggles and hover lifts are turned off with <code>prefers-reduced-motion</code>.</div></li></ul>
+    </div>
+  </section>
+
+<div class="container"><nav class="pager" aria-label="Previous and next stops"><a class="prev" href="../components/card.html"><span class="dir"><i class="bi bi-arrow-left" aria-hidden="true"></i> Previous stop</span><span class="ttl">2.3 Card</span></a><a class="next" href="case-study.html"><span class="dir">Final stop <i class="bi bi-flag-fill" aria-hidden="true"></i></span><span class="ttl">Live case study</span></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<div id="copy-status" class="visually-hidden" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const live = document.getElementById('copy-status');
+  const say = m => { if (live) { live.textContent = ''; setTimeout(() => live.textContent = m, 30); } };
+  document.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const txt = btn.parentElement.querySelector('code').innerText;
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied!'; say('Code copied to clipboard'); }
+    catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => btn.textContent = 'Copy', 1600);
+  }));
+  document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.copy); say(btn.dataset.copy + ' copied'); btn.classList.add('copied'); setTimeout(() => btn.classList.remove('copied'), 1200); } catch {}
+  }));
+</script>
+<script>
+  const wrap = document.getElementById('previewWrap'), frame = document.getElementById('previewFrame'),
+        shell = document.getElementById('previewShell'), label = document.getElementById('previewLabel');
+  let W = 1440;
+  function fit() {
+    const avail = shell.clientWidth, s = Math.min(1, avail / W), H = 760;
+    frame.style.width = W + 'px'; frame.style.height = (H / s) + 'px';
+    frame.style.transform = 'scale(' + s + ')'; frame.style.transformOrigin = 'top left';
+    wrap.style.width = (W * s) + 'px'; wrap.style.height = H + 'px';
+    label.textContent = 'case-study.html @ ' + W + 'px' + (s < 1 ? ' (shown at ' + Math.round(s * 100) + '%)' : '');
+  }
+  document.querySelectorAll('[data-w]').forEach(b => b.addEventListener('click', () => {
+    W = +b.dataset.w; document.querySelectorAll('[data-w]').forEach(x => x.setAttribute('aria-pressed', x === b)); fit();
+  }));
+  window.addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

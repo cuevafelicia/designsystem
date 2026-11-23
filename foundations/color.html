@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color | Side Quest Simple Design System</title>
+  <meta name="description" content="Color primitives and tokens for the Side Quest simple design system, from DESIGN.md.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#FAF5D6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Design system">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>Design System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdsNav" aria-controls="sdsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sdsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-found" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundations</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-found"><li><a class="dropdown-item active" href="../foundations/color.html" aria-current="page">1.1 Color</a></li><li><a class="dropdown-item" href="../foundations/typography.html">1.2 Typography</a></li><li><a class="dropdown-item" href="../foundations/logo.html">1.3 Logo</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-comp" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-comp"><li><a class="dropdown-item" href="../components/button.html">2.1 Button</a></li><li><a class="dropdown-item" href="../components/navbar.html">2.2 Navbar</a></li><li><a class="dropdown-item" href="../components/card.html">2.3 Card</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="../patterns/index.html">Page Pattern</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent" href="../patterns/case-study.html">Live page <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <div class="container">
+      <div class="stop-pin"><span class="pin" aria-hidden="true"><span>1.1</span></span><span class="eyebrow">Foundations</span></div>
+      <h1>Color</h1>
+      <p class="lead">A fun and playful color palette taken from the FC Studio logo, organized exactly like the Figma variables: primitives first, then tokens that point at them.</p>
+      <div><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>DESIGN.md &gt; Color Tokens</span><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>DESIGN.md &gt; Variable Collections</span></div>
+      <nav class="toc" aria-label="On this page"><a href="#primitives">Primitives</a><a href="#tokens">Tokens</a><a href="#contrast">Contrast</a><a href="#color-code">CSS</a></nav>
+    </div>
+  </header>
+  <section class="doc-section" id="primitives" aria-labelledby="primitives-h">
+    <div class="container">
+      <p class="eyebrow">Collection 1</p>
+      <h2 id="primitives-h">Primitives</h2>
+      <p class="section-intro">The raw palette. Five brand colors come from the FC Studio logo; the 700 shades and 100 tints were added so states and backgrounds stay on-brand. Click a hex value to copy it.</p>
+<h3 class="ramp-title">Plum</h3><div class="ramp"><div class="swatch"><div class="chip" style="background:#231123"></div><div class="body">
+          <button type="button" data-copy="#231123" aria-label="Copy #231123"><span class="name">plum/900</span><code>#231123</code></button>
+          <code>var(--color-plum-900)</code><br><code>Style: Brand/Plum - logo "Midnight Violet"</code></div></div><div class="swatch"><div class="chip" style="background:#3D2A3D"></div><div class="body">
+          <button type="button" data-copy="#3D2A3D" aria-label="Copy #3D2A3D"><span class="name">plum/700</span><code>#3D2A3D</code></button>
+          <code>var(--color-plum-700)</code><br><code>Style: Neutral/Plum Soft</code></div></div><div class="swatch"><div class="chip" style="background:#5A4A5A"></div><div class="body">
+          <button type="button" data-copy="#5A4A5A" aria-label="Copy #5A4A5A"><span class="name">plum/500</span><code>#5A4A5A</code></button>
+          <code>var(--color-plum-500)</code><br><code>Style: Neutral/Plum Muted</code></div></div></div>
+<h3 class="ramp-title">Raspberry</h3><div class="ramp"><div class="swatch"><div class="chip" style="background:#5E1735"></div><div class="body">
+          <button type="button" data-copy="#5E1735" aria-label="Copy #5E1735"><span class="name">raspberry/700</span><code>#5E1735</code></button>
+          <code>var(--color-raspberry-700)</code><br><code>Style: Shade/Raspberry Dark</code></div></div><div class="swatch"><div class="chip" style="background:#82204A"></div><div class="body">
+          <button type="button" data-copy="#82204A" aria-label="Copy #82204A"><span class="name">raspberry/500</span><code>#82204A</code></button>
+          <code>var(--color-raspberry-500)</code><br><code>Style: Brand/Raspberry - logo "Dark Raspberry"</code></div></div><div class="swatch"><div class="chip" style="background:#F6E3EB"></div><div class="body">
+          <button type="button" data-copy="#F6E3EB" aria-label="Copy #F6E3EB"><span class="name">raspberry/100</span><code>#F6E3EB</code></button>
+          <code>var(--color-raspberry-100)</code><br><code>Style: Tint/Raspberry</code></div></div></div>
+<h3 class="ramp-title">Teal</h3><div class="ramp"><div class="swatch"><div class="chip" style="background:#3E6B6B"></div><div class="body">
+          <button type="button" data-copy="#3E6B6B" aria-label="Copy #3E6B6B"><span class="name">teal/700</span><code>#3E6B6B</code></button>
+          <code>var(--color-teal-700)</code><br><code>Style: Shade/Teal Dark</code></div></div><div class="swatch"><div class="chip" style="background:#558C8C"></div><div class="body">
+          <button type="button" data-copy="#558C8C" aria-label="Copy #558C8C"><span class="name">teal/500</span><code>#558C8C</code></button>
+          <code>var(--color-teal-500)</code><br><code>Style: Brand/Teal - logo "Dark Cyan"</code></div></div><div class="swatch"><div class="chip" style="background:#DCECEC"></div><div class="body">
+          <button type="button" data-copy="#DCECEC" aria-label="Copy #DCECEC"><span class="name">teal/100</span><code>#DCECEC</code></button>
+          <code>var(--color-teal-100)</code><br><code>Style: Tint/Teal</code></div></div></div>
+<h3 class="ramp-title">Gold</h3><div class="ramp"><div class="swatch"><div class="chip" style="background:#E8DB7D"></div><div class="body">
+          <button type="button" data-copy="#E8DB7D" aria-label="Copy #E8DB7D"><span class="name">gold/500</span><code>#E8DB7D</code></button>
+          <code>var(--color-gold-500)</code><br><code>Style: Brand/Gold - logo "Light Gold"</code></div></div><div class="swatch"><div class="chip" style="background:#FAF5D6"></div><div class="body">
+          <button type="button" data-copy="#FAF5D6" aria-label="Copy #FAF5D6"><span class="name">gold/100</span><code>#FAF5D6</code></button>
+          <code>var(--color-gold-100)</code><br><code>Style: Tint/Gold</code></div></div></div>
+<h3 class="ramp-title">Neutrals</h3><div class="ramp"><div class="swatch"><div class="chip" style="background:#EFF7FF"></div><div class="body">
+          <button type="button" data-copy="#EFF7FF" aria-label="Copy #EFF7FF"><span class="name">alice/50</span><code>#EFF7FF</code></button>
+          <code>var(--color-alice-50)</code><br><code>Style: Brand/Alice Blue - logo "Alice Blue"</code></div></div><div class="swatch"><div class="chip" style="background:#FFFFFF"></div><div class="body">
+          <button type="button" data-copy="#FFFFFF" aria-label="Copy #FFFFFF"><span class="name">white</span><code>#FFFFFF</code></button>
+          <code>var(--color-white)</code><br><code>Style: Neutral/White</code></div></div><div class="swatch"><div class="chip" style="background:#000000"></div><div class="body">
+          <button type="button" data-copy="#000000" aria-label="Copy #000000"><span class="name">black</span><code>#000000</code></button>
+          <code>var(--color-black)</code><br><code>Style: Variable only</code></div></div></div>
+<p class="small text-body-secondary mt-3 mb-0">Figma also has <code>color/annotation/redline</code> (#E31C5E). It is only for the redlines on the Grids and Specs page, so it never appears in the UI.</p>
+    </div>
+  </section>
+  <section class="doc-section" id="tokens" aria-labelledby="tokens-h">
+    <div class="container">
+      <p class="eyebrow">Collection 2</p>
+      <h2 id="tokens-h">Tokens</h2>
+      <p class="section-intro">Components never use a primitive directly. They use a token, which points at a primitive. Change the alias once and every component follows.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Color tokens</caption><thead><tr><th scope="col">Token (Figma)</th><th scope="col">CSS</th><th scope="col">Alias of</th><th scope="col">Use it for</th></tr></thead><tbody><tr><td><span class="chip" style="background:#EFF7FF"></span><code>color/bg/page</code></td><td><code>var(--color-bg-page)</code></td><td><code>color/alice/50</code> #EFF7FF</td><td>Page background behind every section</td></tr><tr><td><span class="chip" style="background:#FFFFFF"></span><code>color/bg/surface</code></td><td><code>var(--color-bg-surface)</code></td><td><code>color/white</code> #FFFFFF</td><td>Cards, panels, navbar</td></tr><tr><td><span class="chip" style="background:#231123"></span><code>color/bg/inverse</code></td><td><code>var(--color-bg-inverse)</code></td><td><code>color/plum/900</code> #231123</td><td>Research, results and footer bands</td></tr><tr><td><span class="chip" style="background:#DCECEC"></span><code>color/bg/tint-teal</code></td><td><code>var(--color-bg-tint-teal)</code></td><td><code>color/teal/100</code> #DCECEC</td><td>Icon circles, teal tags</td></tr><tr><td><span class="chip" style="background:#F6E3EB"></span><code>color/bg/tint-raspberry</code></td><td><code>var(--color-bg-tint-raspberry)</code></td><td><code>color/raspberry/100</code> #F6E3EB</td><td>Raspberry tags and cards</td></tr><tr><td><span class="chip" style="background:#FAF5D6"></span><code>color/bg/tint-gold</code></td><td><code>var(--color-bg-tint-gold)</code></td><td><code>color/gold/100</code> #FAF5D6</td><td>Solution band, hover fills</td></tr><tr><td><span class="chip" style="background:#231123"></span><code>color/text/default</code></td><td><code>var(--color-text-default)</code></td><td><code>color/plum/900</code> #231123</td><td>Headings and body copy</td></tr><tr><td><span class="chip" style="background:#5A4A5A"></span><code>color/text/muted</code></td><td><code>var(--color-text-muted)</code></td><td><code>color/plum/500</code> #5A4A5A</td><td>Captions, helper text</td></tr><tr><td><span class="chip" style="background:#EFF7FF"></span><code>color/text/inverse</code></td><td><code>var(--color-text-inverse)</code></td><td><code>color/alice/50</code> #EFF7FF</td><td>Text on plum bands</td></tr><tr><td><span class="chip" style="background:#FFFFFF"></span><code>color/text/on-primary</code></td><td><code>var(--color-text-on-primary)</code></td><td><code>color/white</code> #FFFFFF</td><td>Text on raspberry buttons</td></tr><tr><td><span class="chip" style="background:#82204A"></span><code>color/text/accent</code></td><td><code>var(--color-text-accent)</code></td><td><code>color/raspberry/500</code> #82204A</td><td>Links, eyebrows</td></tr><tr><td><span class="chip" style="background:#E8DB7D"></span><code>color/text/highlight</code></td><td><code>var(--color-text-highlight)</code></td><td><code>color/gold/500</code> #E8DB7D</td><td>Stats and labels on plum</td></tr><tr><td><span class="chip" style="background:#82204A"></span><code>color/action/primary</code></td><td><code>var(--color-action-primary)</code></td><td><code>color/raspberry/500</code> #82204A</td><td>Primary button fill</td></tr><tr><td><span class="chip" style="background:#5E1735"></span><code>color/action/primary-hover</code></td><td><code>var(--color-action-primary-hover)</code></td><td><code>color/raspberry/700</code> #5E1735</td><td>Primary button hover</td></tr><tr><td><span class="chip" style="background:#558C8C"></span><code>color/action/secondary</code></td><td><code>var(--color-action-secondary)</code></td><td><code>color/teal/500</code> #558C8C</td><td>Secondary accents, eyebrow dot</td></tr><tr><td><span class="chip" style="background:#E8DB7D"></span><code>color/action/highlight</code></td><td><code>var(--color-action-highlight)</code></td><td><code>color/gold/500</code> #E8DB7D</td><td>Accent button, active nav link</td></tr><tr><td><span class="chip" style="background:#231123"></span><code>color/border/default</code></td><td><code>var(--color-border-default)</code></td><td><code>color/plum/900</code> #231123</td><td>Chunky 3px outlines and pop shadows</td></tr><tr><td><span class="chip" style="background:#558C8C"></span><code>color/border/focus</code></td><td><code>var(--color-border-focus)</code></td><td><code>color/teal/500</code> #558C8C</td><td>3px focus ring</td></tr><tr><td><span class="chip" style="background:#EFF7FF"></span><code>color/border/inverse</code></td><td><code>var(--color-border-inverse)</code></td><td><code>color/alice/50</code> #EFF7FF</td><td>Outlines on plum bands</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="doc-section" id="contrast" aria-labelledby="contrast-h">
+    <div class="container">
+      <p class="eyebrow">Accessibility</p>
+      <h2 id="contrast-h">Contrast checks</h2>
+      <p class="section-intro">Every text token was checked against the backgrounds it actually sits on. Body text needs 4.5 : 1 (AA). Large text and UI parts like focus rings need 3 : 1.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Contrast ratios</caption><thead><tr><th scope="col">Sample</th><th scope="col">Pair</th><th scope="col">Ratio</th><th scope="col">WCAG 2.2</th></tr></thead><tbody><tr><td><span class="pair" style="color:#231123;background:#EFF7FF">Aa Side Quest</span></td><td><code>text/default</code> on <code>bg/page</code></td><td>16.51 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#231123;background:#FFFFFF">Aa Side Quest</span></td><td><code>text/default</code> on <code>bg/surface</code></td><td>17.86 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#5A4A5A;background:#EFF7FF">Aa Side Quest</span></td><td><code>text/muted</code> on <code>bg/page</code></td><td>7.58 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#5A4A5A;background:#FFFFFF">Aa Side Quest</span></td><td><code>text/muted</code> on <code>bg/surface</code></td><td>8.20 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#82204A;background:#EFF7FF">Aa Side Quest</span></td><td><code>text/accent</code> on <code>bg/page</code></td><td>8.61 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#82204A;background:#FAF5D6">Aa Side Quest</span></td><td><code>text/accent</code> on <code>bg/tint-gold</code></td><td>8.47 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#FFFFFF;background:#82204A">Aa Side Quest</span></td><td><code>text/on-primary</code> on <code>action/primary</code></td><td>9.31 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#FFFFFF;background:#5E1735">Aa Side Quest</span></td><td><code>text/on-primary</code> on <code>action/primary-hover</code></td><td>12.73 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#231123;background:#E8DB7D">Aa Side Quest</span></td><td><code>text/default</code> on <code>action/highlight</code></td><td>12.64 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#231123;background:#DCECEC">Aa Side Quest</span></td><td><code>text/default</code> on <code>bg/tint-teal</code></td><td>14.67 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#EFF7FF;background:#231123">Aa Side Quest</span></td><td><code>text/inverse</code> on <code>bg/inverse</code></td><td>16.51 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#E8DB7D;background:#231123">Aa Side Quest</span></td><td><code>text/highlight</code> on <code>bg/inverse</code></td><td>12.64 : 1</td><td><span class="pass aaa">AAA</span></td></tr><tr><td><span class="pair" style="color:#558C8C;background:#EFF7FF">Aa Side Quest</span></td><td><code>border/focus</code> on <code>bg/page</code></td><td>3.52 : 1</td><td><span class="pass large">AA large / UI</span></td></tr><tr><td><span class="pair" style="color:#558C8C;background:#FFFFFF">Aa Side Quest</span></td><td><code>action/secondary</code> on <code>bg/surface</code></td><td>3.81 : 1</td><td><span class="pass large">AA large / UI</span></td></tr></tbody></table></div><p class="small text-body-secondary mt-3 mb-0">Teal (<code>action/secondary</code>) is 3.6 : 1 on white, so it is used for focus rings, dots and borders, never for body text.</p>
+    </div>
+  </section>
+  <section class="doc-section" id="color-code" aria-labelledby="color-code-h">
+    <div class="container">
+      <p class="eyebrow">Implementation</p>
+      <h2 id="color-code-h">Use the tokens in CSS</h2>
+      <p class="section-intro">Load <code>tokens.css</code> before Bootstrap overrides and components. Figma names like <code>color/bg/page</code> become <code>--color-bg-page</code>.</p>
+<div class="code-block"><span class="code-title">tokens.css (color)</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="tokens.css (color) code"><code>/* ---------- Collection 1: Primitives ---------- */
+:root {
+  /* color */
+  --color-plum-900: #231123;
+  --color-plum-700: #3D2A3D;
+  --color-plum-500: #5A4A5A;
+  --color-raspberry-700: #5E1735;
+  --color-raspberry-500: #82204A;
+  --color-raspberry-100: #F6E3EB;
+  --color-teal-700: #3E6B6B;
+  --color-teal-500: #558C8C;
+  --color-teal-100: #DCECEC;
+  --color-gold-500: #E8DB7D;
+  --color-gold-100: #FAF5D6;
+  --color-alice-50: #EFF7FF;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-annotation-redline: #E31C5E;
+  ...
+}
+
+/* ---------- Collection 2: Tokens (modes: Desktop, Tablet, Phone) ---------- */
+:root {
+  /* color / bg */
+  --color-bg-page: var(--color-alice-50);
+  --color-bg-surface: var(--color-white);
+  --color-bg-inverse: var(--color-plum-900);
+  --color-bg-tint-teal: var(--color-teal-100);
+  --color-bg-tint-raspberry: var(--color-raspberry-100);
+  --color-bg-tint-gold: var(--color-gold-100);
+
+  /* color / text */
+  --color-text-default: var(--color-plum-900);
+  --color-text-muted: var(--color-plum-500);
+  --color-text-inverse: var(--color-alice-50);
+  --color-text-on-primary: var(--color-white);
+  --color-text-accent: var(--color-raspberry-500);
+  --color-text-highlight: var(--color-gold-500);
+
+  /* color / action */
+  --color-action-primary: var(--color-raspberry-500);
+  --color-action-primary-hover: var(--color-raspberry-700);
+  --color-action-secondary: var(--color-teal-500);
+  --color-action-highlight: var(--color-gold-500);
+
+  /* color / border */
+  --color-border-default: var(--color-plum-900);
+  --color-border-focus: var(--color-teal-500);
+  --color-border-inverse: var(--color-alice-50);
+  ...
+}</code></pre></div><div class="row g-4 mt-1"><div class="col-md-6"><div class="dodont do"><h3><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Do</h3><ul><li>Use tokens like <code>var(--color-text-default)</code> in components.</li><li>Pair plum text with alice, white, gold or tint backgrounds.</li><li>Keep raspberry for actions and accents so it stays meaningful.</li></ul></div></div><div class="col-md-6"><div class="dodont dont"><h3><i class="bi bi-x-circle-fill" aria-hidden="true"></i> Don't</h3><ul><li>Hard-code hex values inside components.</li><li>Put teal or gold text on white or alice; it fails contrast.</li><li>Use the annotation red outside the specs.</li></ul></div></div></div>
+    </div>
+  </section>
+
+<div class="container"><nav class="pager" aria-label="Previous and next stops"><a class="prev" href="../index.html"><span class="dir"><i class="bi bi-arrow-left" aria-hidden="true"></i> Back to</span><span class="ttl">Home</span></a><a class="next" href="../foundations/typography.html"><span class="dir">Next stop <i class="bi bi-arrow-right" aria-hidden="true"></i></span><span class="ttl">1.2 Typography</span></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<div id="copy-status" class="visually-hidden" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const live = document.getElementById('copy-status');
+  const say = m => { if (live) { live.textContent = ''; setTimeout(() => live.textContent = m, 30); } };
+  document.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const txt = btn.parentElement.querySelector('code').innerText;
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied!'; say('Code copied to clipboard'); }
+    catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => btn.textContent = 'Copy', 1600);
+  }));
+  document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.copy); say(btn.dataset.copy + ' copied'); btn.classList.add('copied'); setTimeout(() => btn.classList.remove('copied'), 1200); } catch {}
+  }));
+</script>
+
+</body>
+</html>

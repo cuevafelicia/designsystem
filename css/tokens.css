@@ -1,0 +1,178 @@
+/* =========================================================
+   Side Quest Simple Design System - tokens
+   Generated from DESIGN.md (HCI 472 Simple Design System,
+   Figma page: Foundations and Components).
+   Figma "a/b/c" names become CSS "--a-b-c" custom properties.
+   ========================================================= */
+
+/* ---------- Collection 1: Primitives ---------- */
+:root {
+  /* color */
+  --color-plum-900: #231123;
+  --color-plum-700: #3D2A3D;
+  --color-plum-500: #5A4A5A;
+  --color-raspberry-700: #5E1735;
+  --color-raspberry-500: #82204A;
+  --color-raspberry-100: #F6E3EB;
+  --color-teal-700: #3E6B6B;
+  --color-teal-500: #558C8C;
+  --color-teal-100: #DCECEC;
+  --color-gold-500: #E8DB7D;
+  --color-gold-100: #FAF5D6;
+  --color-alice-50: #EFF7FF;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-annotation-redline: #E31C5E;
+
+  /* space */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+
+  /* radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* border */
+  --border-chunky: 3px;
+
+  /* font families (from the text styles) */
+  --font-display: "Bungee", "Arial Black", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+
+/* ---------- Collection 2: Tokens (modes: Desktop, Tablet, Phone) ---------- */
+:root {
+  /* color / bg */
+  --color-bg-page: var(--color-alice-50);
+  --color-bg-surface: var(--color-white);
+  --color-bg-inverse: var(--color-plum-900);
+  --color-bg-tint-teal: var(--color-teal-100);
+  --color-bg-tint-raspberry: var(--color-raspberry-100);
+  --color-bg-tint-gold: var(--color-gold-100);
+
+  /* color / text */
+  --color-text-default: var(--color-plum-900);
+  --color-text-muted: var(--color-plum-500);
+  --color-text-inverse: var(--color-alice-50);
+  --color-text-on-primary: var(--color-white);
+  --color-text-accent: var(--color-raspberry-500);
+  --color-text-highlight: var(--color-gold-500);
+
+  /* color / action */
+  --color-action-primary: var(--color-raspberry-500);
+  --color-action-primary-hover: var(--color-raspberry-700);
+  --color-action-secondary: var(--color-teal-500);
+  --color-action-highlight: var(--color-gold-500);
+
+  /* color / border */
+  --color-border-default: var(--color-plum-900);
+  --color-border-focus: var(--color-teal-500);
+  --color-border-inverse: var(--color-alice-50);
+
+  /* radius */
+  --radius-button: var(--radius-pill);
+  --radius-card: var(--radius-md);
+  --radius-panel: var(--radius-lg);
+  --radius-small: var(--radius-sm);
+
+  /* border */
+  --border-width: var(--border-chunky);
+
+  /* space (Desktop mode) */
+  --space-section: 96px;
+  --space-gutter: 24px;
+  --space-card: 28px;
+  --space-stack: 16px;
+  --space-inline: 8px;
+}
+
+/* Tablet mode */
+@media (max-width: 991.98px) {
+  :root { --space-section: 80px; }
+}
+/* Phone mode */
+@media (max-width: 575.98px) {
+  :root { --space-section: 64px; --space-card: 24px; }
+}
+
+/* ---------- Effect styles ---------- */
+:root {
+  --shadow-pop-sm: 4px 4px 0 var(--color-border-default);
+  --shadow-pop: 6px 6px 0 var(--color-border-default);
+  --shadow-pop-lg: 10px 10px 0 var(--color-border-default);
+}
+
+/* ---------- Text styles (size / line height / tracking) ---------- */
+:root {
+  --type-desktop-h1: 400 47.78px/1.15 var(--font-display);
+  --type-desktop-h2: 400 39.81px/1.2 var(--font-display);
+  --type-desktop-h3: 400 33.18px/1.25 var(--font-display);
+  --type-desktop-h4: 400 27.65px/1.3 var(--font-display);
+  --type-phone-h1: 400 35.2px/1.15 var(--font-display);
+  --type-phone-h2: 400 29.6px/1.2 var(--font-display);
+  --type-phone-h3: 400 25.6px/1.25 var(--font-display);
+  --type-card-title: 400 23.04px/1.3 var(--font-display);
+  --type-h5: 700 23.04px/1.3 var(--font-body);
+  --type-lead: 400 19.2px/1.7 var(--font-body);
+  --type-body: 400 16px/1.7 var(--font-body);
+  --type-body-emphasis: italic 500 16px/1.7 var(--font-body);
+  --type-body-link: 400 16px/1.7 var(--font-body);
+  --type-eyebrow: 700 13.33px/normal var(--font-body);   /* tracking 12% */
+  --type-tag: 700 13.33px/normal var(--font-body);       /* tracking 4% */
+  --type-button: 700 16px/normal var(--font-body);
+  --type-nav-link: 600 16px/normal var(--font-body);
+  --type-quote: italic 400 19.2px/1.6 var(--font-body);
+  --type-caption: 400 13.33px/1.5 var(--font-body);
+  --type-code: 400 14px/1.5 var(--font-mono);
+  --type-nav-brand: 400 17.6px/normal var(--font-display);
+  --type-sticker: 400 14px/normal var(--font-display);
+  --type-stat-desktop: 400 51.2px/1 var(--font-display);
+  --type-stat-phone: 400 40px/1 var(--font-display);
+  --type-cover-display: 400 176px/.92 var(--font-display);
+  --type-annotation-label: 600 12px/normal var(--font-mono);
+
+  /* size shortcuts used by components (Desktop H1-H4 scale) */
+  --fs-h1: 47.78px;
+  --fs-h2: 39.81px;
+  --fs-h3: 33.18px;
+  --fs-h4: 27.65px;
+  --fs-h5: 23.04px;
+  --fs-lead: 19.2px;
+  --fs-body: 16px;
+  --fs-small: 13.33px;
+}
+@media (max-width: 575.98px) {
+  :root {
+    --fs-h1: 35.2px;
+    --fs-h2: 29.6px;
+    --fs-h3: 25.6px;
+  }
+}
+
+/* ---------- Grid styles (Bootstrap 5 defaults) ---------- */
+/* Desktop 1440: 12 col, 24px gutter, centered (container-xxl 1320)
+   Tablet 768:   12 col, 24px gutter, centered (container-md 720)
+   Phone 375:    12 col, 24px gutter, stretch with 12px margins  */
+
+/* ---------- Bootstrap bridge ---------- */
+:root {
+  --bs-body-bg: var(--color-bg-page);
+  --bs-body-color: var(--color-text-default);
+  --bs-body-font-family: var(--font-body);
+  --bs-link-color: var(--color-text-accent);
+  --bs-link-color-rgb: 130, 32, 74;
+  --bs-link-hover-color-rgb: 94, 23, 53;
+  --bs-border-radius: var(--radius-small);
+  --bs-focus-ring-color: var(--color-border-focus);
+}

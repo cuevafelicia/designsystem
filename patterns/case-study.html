@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Side Quest - UX Case Study | FC Studio</title>
+  <meta name="description" content="UX case study: Side Quest, a mobile concept that brings local event discovery into one place. HCI 594 capstone.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#EFF7FF">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Component: Navbar -->
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Main">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>FC Studio</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent btn-sm py-2 px-3" href="#">Say hi <i class="bi bi-emoji-smile" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- Hero -->
+  <header class="cs-hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="eyebrow mb-3">Mobile app</p>
+          <h1 class="mb-4">Side Quest: who knows what you'll <span class="pop squiggle">stumble upon?</span></h1>
+          <p class="lead mb-4">Finding local events means digging through social media, event apps and word of mouth. Side Quest is a mobile concept that brings it all into one place, so discovering something fun nearby feels less like a chore and more like an adventure.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="fc-tag fc-tag-teal">UX research</span>
+            <span class="fc-tag fc-tag-rasp">Interaction design</span>
+            <span class="fc-tag fc-tag-gold">Usability testing</span>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-fc" href="#solution">See the solution <i class="bi bi-arrow-down-short" aria-hidden="true"></i></a>
+            <a class="btn btn-fc btn-fc-secondary" href="https://www.figma.com/proto/pfGMvojirVz7fHq3dFTuac/HCI-594?node-id=13-2965&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=13%3A2965&amp;page-id=0%3A1" target="_blank" rel="noopener">Play the prototype <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="orbit-stage">
+            <div class="orbit-ring" aria-hidden="true"><span class="moon"></span></div>
+            <div class="orbit-ring inner" aria-hidden="true"><span class="moon"></span></div>
+            <img class="hero-shot" src="../assets/side-quest/home-feed.png" alt="Side Quest home feed showing Events near you, with quick filters for Today, Within 25 miles, Food and price, and event cards for Lulu's Cafe Meet and Greet and Lakeview Taco Fest" width="470" height="981">
+            <span class="sticker sticker-1" aria-hidden="true">Saved to Food Finds!</span>
+            <span class="sticker sticker-2" aria-hidden="true">+12 going</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project meta strip -->
+  <div class="container">
+    <div class="meta-strip">
+      <div class="row g-0">
+        <div class="col-6 col-md-4 meta-item"><p class="meta-label">My role</p><p class="meta-value">Research, design, prototyping</p></div>
+        <div class="col-6 col-md-4 meta-item"><p class="meta-label">Team</p><p class="meta-value">Quest Crew - 5 designers</p></div>
+        <div class="col-12 col-md-4 meta-item"><p class="meta-label">Tools</p><p class="meta-value">Figma, FigJam, Zoom</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The problem -->
+  <section class="section" aria-labelledby="problem-title">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="eyebrow">The problem</p>
+          <h2 id="problem-title" class="mb-4">Local events are <span class="highlight">scattered everywhere</span></h2>
+          <p>For busy adults juggling work, school, family and friends, finding something to do nearby means piecing together posts, websites and flyers. People who avoid social media miss out on events that only live there, and small vendors get lost in the algorithm.</p>
+          <p class="mb-0">Our competitive analysis of Eventbrite, Meetup, Partiful, social media and regional event sites confirmed the gap: each one shows only part of what is happening locally.</p>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="hmw">
+            <p class="hmw-label">The challenge</p>
+            <p>How might we make local event discovery centralized and efficient, without losing the fun of stumbling onto something new?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals as main quests - Component: Card -->
+  <section class="section pt-0" aria-labelledby="goals-title">
+    <div class="container">
+      <p class="eyebrow">Project goals</p>
+      <h2 id="goals-title" class="mb-5">Three main quests</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="fc-card fc-card-teal">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="card-icon" aria-hidden="true"><i class="bi bi-compass"></i></div>
+            </div>
+            <p class="quest-num">Quest 1</p>
+            <h3>Centralize discovery</h3>
+            <p>Users can find a local event without searching across social media, event platforms and websites.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="fc-card fc-card-gold">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="card-icon" aria-hidden="true"><i class="bi bi-sliders"></i></div>
+            </div>
+            <p class="quest-num">Quest 2</p>
+            <h3>Relevant, not overwhelming</h3>
+            <p>Users narrow events by location, date, type and interests, and feel confident they know what is going on nearby.</p>
+          </article>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <article class="fc-card fc-card-rasp">
+            <div class="d-flex justify-content-between align-items-start">
+              <div class="card-icon" aria-hidden="true"><i class="bi bi-heart"></i></div>
+            </div>
+            <p class="quest-num">Quest 3</p>
+            <h3>Act on it later</h3>
+            <p>Users understand key event details, save events they might attend and come back to them when they are ready.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section class="section section-inverse" aria-labelledby="research-title">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8">
+          <p class="eyebrow">Discovery research</p>
+          <h2 id="research-title">Scouting the territory</h2>
+          <p class="lead">We started with a literature review and competitive analysis, then ran remote, semi-structured interviews with adults who look for local things to do. I synthesized findings with the team in a FigJam affinity diagram.</p>
+        </div>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-md-3 stat"><span class="stat-num">3</span><span class="stat-label">research articles reviewed</span></div>
+        <div class="col-6 col-md-3 stat"><span class="stat-num">5</span><span class="stat-label">competitors analyzed</span></div>
+        <div class="col-6 col-md-3 stat"><span class="stat-num">5</span><span class="stat-label">user interviews on Zoom</span></div>
+        <div class="col-6 col-md-3 stat"><span class="stat-num">30-45</span><span class="stat-label">minutes per interview</span></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <figure class="persona text-body d-flex flex-column flex-md-row gap-4 align-items-md-center mb-0">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <blockquote class="mb-2">"MeetUp is the place to look when I'm trying to get the vibe of the city."</blockquote>
+              <figcaption class="mb-0 fw-semibold">Interview participant, 30 - Data engineer</figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key insights - Component: Card -->
+  <section class="section" aria-labelledby="insights-title">
+    <div class="container">
+      <p class="eyebrow">What we learned</p>
+      <h2 id="insights-title" class="mb-5">Clues from the interviews</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <article class="fc-card fc-card-teal">
+            <div class="card-icon" aria-hidden="true"><i class="bi bi-puzzle"></i></div>
+            <h3>It's all in pieces</h3>
+            <p>People found events through Instagram, TikTok, Eventbrite, Meetup, Partiful, venue accounts and friends. No single source had everything.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="fc-card fc-card-gold">
+            <div class="card-icon" aria-hidden="true"><i class="bi bi-shield-check"></i></div>
+            <h3>Trust takes work</h3>
+            <p>Participants cross-checked sources to confirm an event was real, and needed time, location, cost, duration and crowd size before deciding.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="fc-card fc-card-rasp">
+            <div class="card-icon" aria-hidden="true"><i class="bi bi-phone"></i></div>
+            <h3>Screenshots are the save button</h3>
+            <p>Without a good way to keep track of events, people relied on screenshots, memory and the algorithm resurfacing posts.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="fc-card fc-card-teal">
+            <div class="card-icon" aria-hidden="true"><i class="bi bi-shuffle"></i></div>
+            <h3>Personalize, don't pigeonhole</h3>
+            <p>Recommendations were welcome, but participants worried strict filters would hide events they might love.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process quest map -->
+  <section class="section pt-0" aria-labelledby="process-title">
+    <div class="container">
+      <p class="eyebrow">Process</p>
+      <h2 id="process-title" class="mb-5">The quest map</h2>
+      <ol class="row g-4 process-track list-unstyled">
+        <li class="col-6 col-lg-3 process-step">
+          <span class="step-dot">1</span>
+          <h3 class="h5">Discover</h3>
+          <p>Literature review, competitive analysis and 5 interviews.</p>
+        </li>
+        <li class="col-6 col-lg-3 process-step">
+          <span class="step-dot">2</span>
+          <h3 class="h5">Synthesize</h3>
+          <p>Affinity diagram in FigJam, user stories and MVP scope.</p>
+        </li>
+        <li class="col-6 col-lg-3 process-step">
+          <span class="step-dot">3</span>
+          <h3 class="h5">Design</h3>
+          <p>Information architecture, user flows and low-fi wireframes.</p>
+        </li>
+        <li class="col-6 col-lg-3 process-step">
+          <span class="step-dot">4</span>
+          <h3 class="h5">Test</h3>
+          <p>Hi-fi Figma prototype and 5 moderated usability tests.</p>
+        </li>
+      </ol>
+
+      <figure class="ia-figure mt-5">
+        <img src="../assets/side-quest/information-architecture.png" alt="Side Quest information architecture. New users go from splash screen through sign up, onboarding preferences, location and notifications to Home. The MVP covers Home, Search and Saved, which all lead to Event Details, where users can save, share, get directions or RSVP. Passport and Profile are marked out of scope." loading="lazy" width="2048" height="1619">
+        <figcaption>Information architecture. Purple is the MVP, gray is out of scope, and colored paths trace the three user tasks we tested.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution" class="section section-tint" aria-labelledby="solution-title">
+    <div class="container">
+      <p class="eyebrow">The solution</p>
+      <h2 id="solution-title" class="mb-3">Three core journeys</h2>
+      <p class="lead mb-5" style="max-width: 60ch">We scoped the MVP down to the journey our research pointed to: discover, evaluate, save, revisit.</p>
+
+      <div class="journey row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="fc-tag fc-tag-teal mb-3">Journey 1</span>
+          <h3>Personalized discovery</h3>
+          <p>A short onboarding asks how you like to find events, your event style and how far you'll travel. Then the Home feed shows events near you, while still leaving room to browse outside your usual picks.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="screen-pair">
+            <img src="../assets/side-quest/onboarding.png" alt="Onboarding step 1 of 5: How do you typically discover events? Options are Browse and explore, I hunt for specific events, and I'm exploring the area" loading="lazy" width="266" height="549">
+            <img src="../assets/side-quest/home-feed.png" alt="Home feed titled Events near you, with quick filter chips and event cards" loading="lazy" width="470" height="981">
+          </div>
+        </div>
+      </div>
+
+      <div class="journey row g-4 g-lg-5 align-items-center flex-lg-row-reverse">
+        <div class="col-lg-5">
+          <span class="fc-tag fc-tag-rasp mb-3">Journey 2</span>
+          <h3>Search, evaluate and save</h3>
+          <p>Filter by date, distance, category and price. Event details put what people told us they need up front: date, time, location, description and who's going. Tap the heart to add it to a collection like Food Finds.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="screen-pair">
+            <img src="../assets/side-quest/add-to-collection.png" alt="Add to collection sheet listing Favorites, Date Night, Food Finds and Weekend Ideas, with a New collection link and a Done button" loading="lazy" width="463" height="981">
+            <img src="../assets/side-quest/saved-toast.png" alt="Event details for Lulu's Cafe Meet and Greet with a confirmation that reads Saved to Food Finds" loading="lazy" width="471" height="981">
+          </div>
+        </div>
+      </div>
+
+      <div class="journey row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="fc-tag fc-tag-gold mb-3">Journey 3</span>
+          <h3>Revisit and go</h3>
+          <p>Saved events live in collections, so no more digging through screenshots. When you're ready, open the event and get directions in your favorite maps app.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="screen-pair">
+            <img src="../assets/side-quest/food-finds.png" alt="Food Finds collection showing two saved events and more food events to discover" loading="lazy" width="470" height="983">
+            <img src="../assets/side-quest/directions.png" alt="Get Directions screen with a map of the area around Lulu's Cafe and an Open in Maps button" loading="lazy" width="466" height="983">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section section-inverse" aria-labelledby="results-title">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <p class="eyebrow">Usability testing</p>
+          <h2 id="results-title">Achievements unlocked</h2>
+          <p>Five participants completed three scenario tasks in moderated Zoom sessions, then rated each task with the After-Scenario Questionnaire (ASQ), from 1 (difficult) to 5 (easy).</p>
+          <p class="mb-0">Every participant rated onboarding a 4 or 5.</p>
+        </div>
+        <div class="col-lg-7">
+          <ul class="asq-list list-unstyled mb-0">
+            <li class="asq">
+              <div class="asq-head"><span>Task 1 - Onboard and discover an event</span><strong>4.6 / 5</strong></div>
+              <div class="asq-bar" aria-hidden="true"><span style="width: 92%"></span></div>
+            </li>
+            <li class="asq">
+              <div class="asq-head"><span>Task 2 - Search, filter and save to a collection</span><strong>4.1 / 5</strong></div>
+              <div class="asq-bar" aria-hidden="true"><span style="width: 82%"></span></div>
+            </li>
+            <li class="asq">
+              <div class="asq-head"><span>Task 3 - Find a saved event and get directions</span><strong>4.8 / 5</strong></div>
+              <div class="asq-bar" aria-hidden="true"><span style="width: 96%"></span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6">
+          <div class="loot loot-win">
+            <h3 class="h5"><i class="bi bi-trophy" aria-hidden="true"></i> What worked</h3>
+            <ul class="mb-0">
+              <li>Sign up felt straightforward and onboarding questions felt relevant.</li>
+              <li>The heart icon was understood as the way to save an event.</li>
+              <li>"Add to collection" made sense as a categorized list.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="loot loot-fix">
+            <h3 class="h5"><i class="bi bi-tools" aria-hidden="true"></i> Bugs to squash</h3>
+            <ul class="mb-0">
+              <li>Filters were hard to find. Several people tapped the search bar first to set a distance.</li>
+              <li>People expected to save right from the event card, not only in event details.</li>
+              <li>Some looked for save near the RSVP button, not by the event title.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section" aria-labelledby="learn-title">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4">
+          <p class="eyebrow">Reflection</p>
+          <h2 id="learn-title">Next level</h2>
+          <p>We ran round 1 of testing and drafted recommendations for round 2. Here's what I'm taking with me.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="accordion fc-accordion" id="learnings">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#l1" aria-expanded="true" aria-controls="l1">Design for existing mental models</button>
+              </h3>
+              <div id="l1" class="accordion-collapse collapse show" data-bs-parent="#learnings">
+                <div class="accordion-body">Our filters worked, but they weren't where people looked first. Task 2 scored lowest because the layout didn't match habits people bring from other apps, like starting with the search bar.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#l2" aria-expanded="false" aria-controls="l2">Scope down to ship something real</button>
+              </h3>
+              <div id="l2" class="accordion-collapse collapse" data-bs-parent="#learnings">
+                <div class="accordion-body">Our first concept was much bigger. Narrowing to three journeys backed by interview findings let us build and test a polished prototype in one term. When a feature-priority survey didn't get enough responses, we leaned on the interviews instead.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#l3" aria-expanded="false" aria-controls="l3">Next steps</button>
+              </h3>
+              <div id="l3" class="accordion-collapse collapse" data-bs-parent="#learnings">
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>Make filters easier to find and let people save straight from event cards.</li>
+                    <li>Run round 2 usability testing with a larger, more diverse group.</li>
+                    <li>Explore the out-of-scope features, Passport, badges and rewards, to see if they encourage exploration without distracting from discovery.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next project -->
+  <section class="section pt-0" aria-label="More work">
+    <div class="container">
+      <a class="next-card d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4" href="#">
+        <div>
+          <p class="eyebrow mb-2" style="color: var(--color-action-highlight)">Quest complete</p>
+          <h2 class="mb-0">Back to all work</h2>
+        </div>
+        <span class="arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="fc-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="index.html">Design system</a><span class="footer-sep"> - </span><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

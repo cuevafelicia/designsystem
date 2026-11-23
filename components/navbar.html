@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navbar | Side Quest Simple Design System</title>
+  <meta name="description" content="Navbar component: breakpoints, CSS specifications and accessibility guidelines.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#FAF5D6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Design system">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>Design System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdsNav" aria-controls="sdsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sdsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-found" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundations</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-found"><li><a class="dropdown-item" href="../foundations/color.html">1.1 Color</a></li><li><a class="dropdown-item" href="../foundations/typography.html">1.2 Typography</a></li><li><a class="dropdown-item" href="../foundations/logo.html">1.3 Logo</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-comp" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-comp"><li><a class="dropdown-item" href="../components/button.html">2.1 Button</a></li><li><a class="dropdown-item active" href="../components/navbar.html" aria-current="page">2.2 Navbar</a></li><li><a class="dropdown-item" href="../components/card.html">2.3 Card</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="../patterns/index.html">Page Pattern</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent" href="../patterns/case-study.html">Live page <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <div class="container">
+      <div class="stop-pin"><span class="pin" aria-hidden="true"><span>2.2</span></span><span class="eyebrow">Components</span></div>
+      <h1>Navbar</h1>
+      <p class="lead">The responsive Bootstrap navbar from the case study: favicon brand, pill links that wiggle on hover and a gold active state.</p>
+      <div><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>DESIGN.md &gt; Component Families &gt; Navbar, Nav Link</span><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Breakpoint: 4 variants</span></div>
+      <nav class="toc" aria-label="On this page"><a href="#nav-overview">Breakpoints</a><a href="#nav-specs">Specs</a><a href="#nav-code">Code</a><a href="#nav-a11y">Accessibility</a></nav>
+    </div>
+  </header>
+  <section class="doc-section" id="nav-overview" aria-labelledby="nav-overview-h">
+    <div class="container">
+      <p class="eyebrow">Component 2.2</p>
+      <h2 id="nav-overview-h">Breakpoints and states</h2>
+      <p class="section-intro">The Figma <strong>Navbar</strong> set has 4 variants: <strong>Breakpoint</strong> = Desktop, Tablet, Phone and Phone Open. Its links are the <strong>Nav Link</strong> set (Default, Hover, Active). It is Bootstrap's <code>.navbar</code> with an <code>.fc-navbar</code> skin.</p>
+<span class="demo-label">Breakpoint = Desktop (expands at 992px and up)</span>
+<div class="demo-stage p-0 overflow-hidden mb-4 scroll-x"><div style="min-width:640px"><nav class="navbar navbar-expand fc-navbar" aria-label="Navbar demo, desktop">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#nav-overview">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>FC Studio</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navDemoDesk" aria-controls="navDemoDesk"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navDemoDesk">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-fc btn-fc-accent" href="#">Say hi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+<span class="demo-label">Breakpoint = Tablet (768px, collapsed below 992px)</span>
+<div class="demo-stage p-0 overflow-hidden mb-4" style="max-width:768px"><nav class="navbar  fc-navbar" aria-label="Navbar demo, tablet">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#nav-overview">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>FC Studio</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navDemoTablet" aria-controls="navDemoTablet"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navDemoTablet">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-fc btn-fc-accent" href="#">Say hi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></div>
+<div class="row g-4">
+  <div class="col-md-6"><span class="demo-label">Breakpoint = Phone (375px, collapsed)</span><div class="demo-stage p-0 overflow-hidden" style="max-width:375px"><nav class="navbar  fc-navbar" aria-label="Navbar demo, phone collapsed">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#nav-overview">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>FC Studio</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navDemoPhone" aria-controls="navDemoPhone"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navDemoPhone">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-fc btn-fc-accent" href="#">Say hi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+  <div class="col-md-6"><span class="demo-label">Breakpoint = Phone Open</span><div class="demo-stage p-0 overflow-hidden" style="max-width:375px"><nav class="navbar  fc-navbar" aria-label="Navbar demo, phone open">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#nav-overview">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>FC Studio</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navDemoOpen" aria-controls="navDemoOpen"
+            aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navDemoOpen">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-fc btn-fc-accent" href="#">Say hi</a></li>
+      </ul>
+    </div>
+  </div>
+</nav></div></div>
+</div>
+<p class="small text-body-secondary mt-3 mb-0">The tablet and phone demos are live: the menu button opens and closes them. The real navbar at the top of this page is the same component.</p>
+<span class="demo-label mt-4">Nav Link states</span>
+<div class="demo-stage"><nav class="fc-navbar border-0 bg-transparent p-0" aria-label="Nav link states"><ul class="navbar-nav flex-row flex-wrap gap-3">
+  <li class="nav-item"><a class="nav-link" href="#nav-overview">Default</a></li>
+  <li class="nav-item"><a class="nav-link is-hover" href="#nav-overview" tabindex="-1">Hover</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#nav-overview" tabindex="-1">Active</a></li>
+</ul></nav></div>
+    </div>
+  </section>
+  <section class="doc-section" id="nav-specs" aria-labelledby="nav-specs-h">
+    <div class="container">
+      <p class="eyebrow">Specs</p>
+      <h2 id="nav-specs-h">CSS specifications</h2>
+      <p class="section-intro">The bar, brand, links and toggler, with their tokens.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Navbar specs</caption><thead><tr><th scope="col">Part</th><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Token</th></tr></thead><tbody><tr><td>Bar</td><td>Background / bottom border</td><td>white / 3px plum</td><td><code>--color-bg-surface</code> <code>--border-default</code></td></tr><tr><td>Bar</td><td>Padding / position</td><td>12px top and bottom, sticky-top</td><td>-</td></tr><tr><td>Brand</td><td>Favicon height</td><td>44px</td><td>Favicon component</td></tr><tr><td>Brand</td><td>Text</td><td>Bungee 17.6px</td><td><code>--type-nav-brand</code> (Nav Brand)</td></tr><tr><td>Link</td><td>Text</td><td>IBM Plex Sans SemiBold 16px, plum</td><td><code>--type-nav-link</code> <code>--color-text-default</code></td></tr><tr><td>Link</td><td>Padding / radius</td><td>6px 14px / pill</td><td><code>--radius-button</code></td></tr><tr><td>Link: Hover</td><td>Background, tilt</td><td>gold tint, rotate -2deg</td><td><code>--color-bg-tint-gold</code></td></tr><tr><td>Link: Active</td><td>Background, border</td><td>gold, 2px plum</td><td><code>--color-action-highlight</code> <code>--color-border-default</code></td></tr><tr><td>Toggler</td><td>Border / radius / shadow</td><td>3px plum / 10px / pop SM</td><td><code>--radius-small</code> <code>--shadow-pop-sm</code></td></tr><tr><td>CTA</td><td>Button</td><td>Accent</td><td>Button: Type=Accent</td></tr><tr><td>Layout</td><td>Breakpoints</td><td>Expands at lg (992px) and up, so Desktop 1440 shows every link. Below 992px, Tablet 768 and Phone 375 collapse the links behind the menu button.</td><td>Grid styles</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="doc-section" id="nav-code" aria-labelledby="nav-code-h">
+    <div class="container">
+      <p class="eyebrow">Code</p>
+      <h2 id="nav-code-h">HTML and CSS</h2>
+      <p class="section-intro">Needs the Bootstrap JS bundle for the collapse menu.</p>
+<div class="code-block"><span class="code-title">HTML</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="HTML code"><code>&lt;nav class="navbar navbar-expand-lg fc-navbar" aria-label="Main"&gt;
+  &lt;div class="container"&gt;
+    &lt;a class="navbar-brand d-flex align-items-center gap-2" href="index.html"&gt;
+      &lt;img src="assets/favicon.svg" alt="" width="44" height="44"&gt;
+      &lt;span&gt;FC Studio&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav"
+            aria-expanded="false" aria-label="Toggle navigation"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="mainNav"&gt;
+      &lt;ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1"&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link active" aria-current="page" href="#"&gt;Work&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Playground&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-item ms-lg-2"&gt;&lt;a class="btn btn-fc btn-fc-accent" href="#"&gt;Say hi&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre></div><div class="code-block"><span class="code-title">components.css (Navbar)</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="components.css (Navbar) code"><code>/* ---------- Component: Navbar ---------- */
+.fc-navbar {
+  background: var(--color-bg-surface);
+  border-bottom: var(--border-default);
+  padding-block: .75rem;
+}
+.fc-navbar .navbar-brand img { height: 44px; width: auto; }
+.fc-navbar .navbar-brand {
+  font: var(--type-nav-brand);
+  color: var(--color-text-default);
+}
+.fc-navbar .nav-link {
+  font: var(--type-nav-link);
+  color: var(--color-text-default);
+  padding: 6px 14px !important;
+  border-radius: var(--radius-button);
+  transition: background-color .15s ease, transform .15s ease;
+}
+.fc-navbar .nav-link:hover, .fc-navbar .nav-link.is-hover { background: var(--color-gold-100); transform: rotate(-2deg); }
+.fc-navbar .nav-link.active,
+.fc-navbar .nav-link[aria-current="page"] {
+  background: var(--color-action-highlight);
+  border: 2px solid var(--color-border-default);
+}
+.fc-navbar .navbar-toggler {
+  border: var(--border-default);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow-pop-sm);
+}</code></pre></div>
+    </div>
+  </section>
+  <section class="doc-section" id="nav-a11y" aria-labelledby="nav-a11y-h">
+    <div class="container">
+      <p class="eyebrow">Accessibility</p>
+      <h2 id="nav-a11y-h">Accessibility guidelines</h2>
+      <p class="section-intro">The navbar is on every page, so mistakes here repeat everywhere.</p>
+<ul class="a11y-list"><li><i class="bi bi-signpost" aria-hidden="true"></i><div><strong>Landmark and label<span class=wcag>1.3.1</span><span class=wcag>2.4.1</span></strong>Use <code>&lt;nav aria-label="Main"&gt;</code>. Add a "Skip to content" link before it that jumps to <code>&lt;main&gt;</code>.</div></li><li><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong>Mark the current page<span class=wcag>1.3.1</span><span class=wcag>4.1.2</span></strong>The active link gets <code>aria-current="page"</code>, not just the gold style, so screen readers announce it.</div></li><li><i class="bi bi-list" aria-hidden="true"></i><div><strong>Menu button<span class=wcag>4.1.2</span></strong>The toggler has <code>aria-label="Toggle navigation"</code>, <code>aria-controls</code> and <code>aria-expanded</code>, which Bootstrap updates when it opens.</div></li><li><i class="bi bi-keyboard" aria-hidden="true"></i><div><strong>Keyboard order<span class=wcag>2.1.1</span><span class=wcag>2.4.3</span></strong>Tab moves brand, links, then the button in reading order. Nothing is hidden from keyboard users when the menu is open.</div></li><li><i class="bi bi-bullseye" aria-hidden="true"></i><div><strong>Visible focus<span class=wcag>2.4.7</span></strong>Links and the toggler show the 3px teal focus ring.</div></li><li><i class="bi bi-image" aria-hidden="true"></i><div><strong>Brand image<span class=wcag>1.1.1</span></strong>The favicon next to the brand name is decorative (<code>alt=""</code>) because the text already says the name.</div></li><li><i class="bi bi-phone" aria-hidden="true"></i><div><strong>Tap targets<span class=wcag>2.5.8</span></strong>Links are 33px tall and the menu button is 60 x 44px, all above the 24px minimum, so they are easy to tap on phones.</div></li></ul><div class="row g-4 mt-1"><div class="col-md-6"><div class="dodont do"><h3><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Do</h3><ul><li>Keep it to 4 or 5 links plus one button.</li><li>Use the same order on every page.</li><li>Use the accent button for the one call to action.</li></ul></div></div><div class="col-md-6"><div class="dodont dont"><h3><i class="bi bi-x-circle-fill" aria-hidden="true"></i> Don't</h3><ul><li>Rely on color alone to show the current page.</li><li>Hide important links only in the phone menu.</li><li>Make the sticky bar taller than about 90px.</li></ul></div></div></div>
+    </div>
+  </section>
+
+<div class="container"><nav class="pager" aria-label="Previous and next stops"><a class="prev" href="../components/button.html"><span class="dir"><i class="bi bi-arrow-left" aria-hidden="true"></i> Previous stop</span><span class="ttl">2.1 Button</span></a><a class="next" href="../components/card.html"><span class="dir">Next stop <i class="bi bi-arrow-right" aria-hidden="true"></i></span><span class="ttl">2.3 Card</span></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<div id="copy-status" class="visually-hidden" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const live = document.getElementById('copy-status');
+  const say = m => { if (live) { live.textContent = ''; setTimeout(() => live.textContent = m, 30); } };
+  document.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const txt = btn.parentElement.querySelector('code').innerText;
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied!'; say('Code copied to clipboard'); }
+    catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => btn.textContent = 'Copy', 1600);
+  }));
+  document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.copy); say(btn.dataset.copy + ' copied'); btn.classList.add('copied'); setTimeout(() => btn.classList.remove('copied'), 1200); } catch {}
+  }));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typography | Side Quest Simple Design System</title>
+  <meta name="description" content="Typography hierarchy for the Side Quest simple design system.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#FAF5D6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Design system">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>Design System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdsNav" aria-controls="sdsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sdsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-found" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundations</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-found"><li><a class="dropdown-item" href="../foundations/color.html">1.1 Color</a></li><li><a class="dropdown-item active" href="../foundations/typography.html" aria-current="page">1.2 Typography</a></li><li><a class="dropdown-item" href="../foundations/logo.html">1.3 Logo</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-comp" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-comp"><li><a class="dropdown-item" href="../components/button.html">2.1 Button</a></li><li><a class="dropdown-item" href="../components/navbar.html">2.2 Navbar</a></li><li><a class="dropdown-item" href="../components/card.html">2.3 Card</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="../patterns/index.html">Page Pattern</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent" href="../patterns/case-study.html">Live page <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <div class="container">
+      <div class="stop-pin"><span class="pin" aria-hidden="true"><span>1.2</span></span><span class="eyebrow">Foundations</span></div>
+      <h1>Typography</h1>
+      <p class="lead">The type hierarchy from DESIGN.md: 26 text styles, all built from Bungee, IBM Plex Sans and IBM Plex Mono on a 1.2 Minor Third scale.</p>
+      <div><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>DESIGN.md &gt; Typography Tokens</span><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Type Hierarchies &gt; Hierarchy 3</span></div>
+      <nav class="toc" aria-label="On this page"><a href="#families">Pairing</a><a href="#headings-desktop">Headings - Desktop</a><a href="#headings-phone">Headings - Phone</a><a href="#body">Body</a><a href="#interface">Interface</a><a href="#display-and-data">Display and data</a><a href="#scale">Scale</a></nav>
+    </div>
+  </header>
+  <section class="doc-section" id="families" aria-labelledby="families-h">
+    <div class="container">
+      <p class="eyebrow">Type pairing</p>
+      <h2 id="families-h">Bungee + IBM Plex Sans</h2>
+      <p class="section-intro">This is Hierarchy 3 from my type hierarchies page: a 1.2 Minor Third scale on a 16px base, made with typescale.com. Bungee brings the playful, arcade feel to display text; IBM Plex Sans keeps long reading calm. IBM Plex Mono covers code and spec labels.</p>
+<div class="row g-4">
+      <div class="col-md-4"><div class="panel h-100"><p class="demo-label">Display</p><p style="font:400 56px/1 var(--font-display)" class="mb-2">Aa</p><p class="mb-0"><strong>Bungee</strong> Regular 400. Headings, card titles, stats, stickers.</p></div></div>
+      <div class="col-md-4"><div class="panel h-100"><p class="demo-label">Body</p><p style="font:500 56px/1 var(--font-body)" class="mb-2">Aa</p><p class="mb-0"><strong>IBM Plex Sans</strong> 400, 500, 600, 700 and italics. Body, UI labels, buttons.</p></div></div>
+      <div class="col-md-4"><div class="panel h-100"><p class="demo-label">Mono</p><p style="font:400 56px/1 var(--font-mono)" class="mb-2">Aa</p><p class="mb-0"><strong>IBM Plex Mono</strong> 400 and 600. Code and spec annotations.</p></div></div>
+    </div>
+    </div>
+  </section>
+  <section class="doc-section" id="headings-desktop" aria-labelledby="headings-desktop-h">
+    <div class="container">
+      <p class="eyebrow">Text styles</p>
+      <h2 id="headings-desktop-h">Headings - Desktop</h2>
+      <p class="section-intro">Used at 576px and up.</p>
+<div class="spec-block"><p class="label">Desktop/H1 - Page title</p>
+          <p class="sample" style="font: var(--type-desktop-h1);">Side quest unlocked</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 47.78px (2.986rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.15 (115%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-desktop-h1)</li><li class="token">Style: Desktop/H1</li></ul></div>
+<div class="spec-block"><p class="label">Desktop/H2 - Section titles</p>
+          <p class="sample" style="font: var(--type-desktop-h2);">The main quests</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 39.81px (2.488rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.2 (120%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-desktop-h2)</li><li class="token">Style: Desktop/H2</li></ul></div>
+<div class="spec-block"><p class="label">Desktop/H3 - Journey titles</p>
+          <p class="sample" style="font: var(--type-desktop-h3);">Personalized discovery</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 33.18px (2.074rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.25 (125%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-desktop-h3)</li><li class="token">Style: Desktop/H3</li></ul></div>
+<div class="spec-block"><p class="label">Desktop/H4 - Sub-sections</p>
+          <p class="sample" style="font: var(--type-desktop-h4);">Search, evaluate and save</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 27.65px (1.728rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.3 (130%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-desktop-h4)</li><li class="token">Style: Desktop/H4</li></ul></div>
+    </div>
+  </section>
+  <section class="doc-section" id="headings-phone" aria-labelledby="headings-phone-h">
+    <div class="container">
+      <p class="eyebrow">Text styles</p>
+      <h2 id="headings-phone-h">Headings - Phone</h2>
+      <p class="section-intro">Under 576px the headings step down so long words still fit the 351px column.</p>
+<div class="spec-block"><p class="label">Phone/H1 - Page title under 576px</p>
+          <p class="sample" style="font: var(--type-phone-h1);">Side quest unlocked</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 35.2px (2.200rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.15 (115%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-phone-h1)</li><li class="token">Style: Phone/H1</li></ul></div>
+<div class="spec-block"><p class="label">Phone/H2 - Section titles under 576px</p>
+          <p class="sample" style="font: var(--type-phone-h2);">The main quests</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 29.6px (1.850rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.2 (120%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-phone-h2)</li><li class="token">Style: Phone/H2</li></ul></div>
+<div class="spec-block"><p class="label">Phone/H3 - Journey titles under 576px</p>
+          <p class="sample" style="font: var(--type-phone-h3);">Personalized discovery</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 25.6px (1.600rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.25 (125%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-phone-h3)</li><li class="token">Style: Phone/H3</li></ul></div>
+    </div>
+  </section>
+  <section class="doc-section" id="body" aria-labelledby="body-h">
+    <div class="container">
+      <p class="eyebrow">Text styles</p>
+      <h2 id="body-h">Body</h2>
+      <p class="section-intro">Reading text. Line height stays at 1.7 for comfortable paragraphs.</p>
+<div class="spec-block"><p class="label">Lead - Intro paragraphs</p>
+          <p class="sample" style="font: var(--type-lead);">Finding local events means digging through social media, event apps and word of mouth.</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 19.2px (1.200rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.7 (170%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-lead)</li><li class="token">Style: Lead</li></ul></div>
+<div class="spec-block"><p class="label">Body - All paragraphs</p>
+          <p class="sample" style="font: var(--type-body);">Five participants completed three scenario tasks in moderated Zoom sessions, then rated each task.</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 16px (1rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.7 (170%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-body)</li><li class="token">Style: Body</li></ul></div>
+<div class="spec-block"><p class="label">Body Emphasis - Stressed words inside body copy</p>
+          <p class="sample" style="font: var(--type-body-emphasis);">Who knows what you'll stumble upon?</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 16px (1rem)</li><li>font-weight: 500</li><li>font-style: italic</li><li>line-height: 1.7 (170%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-body-emphasis)</li><li class="token">Style: Body Emphasis</li></ul></div>
+<div class="spec-block"><p class="label">Body Link - Inline links, underlined, text/accent</p>
+          <p class="sample" style="font: var(--type-body-link); color: var(--color-text-accent);"><a href="#scale">See the responsive scale</a></p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 16px (1rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.7 (170%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-body-link)</li><li class="token">Style: Body Link</li></ul></div>
+<div class="spec-block"><p class="label">Quote - Participant quotes</p>
+          <p class="sample" style="font: var(--type-quote);">"MeetUp is the place to look when I'm trying to get the vibe of the city."</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 19.2px (1.200rem)</li><li>font-weight: 400</li><li>font-style: italic</li><li>line-height: 1.6 (160%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-quote)</li><li class="token">Style: Quote</li></ul></div>
+<div class="spec-block"><p class="label">Caption - Figure captions</p>
+          <p class="sample" style="font: var(--type-caption);">Information architecture. Purple is the MVP.</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 13.33px (0.833rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.5 (150%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-caption)</li><li class="token">Style: Caption</li></ul></div>
+<div class="spec-block"><p class="label">Code - Code samples on these docs</p>
+          <p class="sample" style="font: var(--type-code);">var(--color-bg-page)</p><ul class="spec-list"><li>font-family: "IBM Plex Mono"</li><li>font-size: 14px (0.875rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.5 (150%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-code)</li><li class="token">Style: Code</li></ul></div>
+    </div>
+  </section>
+  <section class="doc-section" id="interface" aria-labelledby="interface-h">
+    <div class="container">
+      <p class="eyebrow">Text styles</p>
+      <h2 id="interface-h">Interface</h2>
+      <p class="section-intro">Small labels that live inside components.</p>
+<div class="spec-block"><p class="label">H5 - Small headings in panels</p>
+          <p class="sample" style="font: var(--type-h5);">What worked</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 23.04px (1.440rem)</li><li>font-weight: 700</li><li>font-style: normal</li><li>line-height: 1.3 (130%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-h5)</li><li class="token">Style: H5</li></ul></div>
+<div class="spec-block"><p class="label">Card Title - Card headings</p>
+          <p class="sample" style="font: var(--type-card-title);">Centralize discovery</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 23.04px (1.440rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1.3 (130%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-card-title)</li><li class="token">Style: Card Title</li></ul></div>
+<div class="spec-block"><p class="label">Eyebrow - Labels above headings, uppercase</p>
+          <p class="sample" style="font: var(--type-eyebrow); letter-spacing: 0.12em; text-transform: uppercase;">THE SOLUTION</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 13.33px (0.833rem)</li><li>font-weight: 700</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 12%</li><li class="token">var(--type-eyebrow)</li><li class="token">Style: Eyebrow</li></ul></div>
+<div class="spec-block"><p class="label">Tag - Pills and tags, uppercase</p>
+          <p class="sample" style="font: var(--type-tag); letter-spacing: 0.04em; text-transform: uppercase;">UX RESEARCH</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 13.33px (0.833rem)</li><li>font-weight: 700</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 4%</li><li class="token">var(--type-tag)</li><li class="token">Style: Tag</li></ul></div>
+<div class="spec-block"><p class="label">Button - Button labels</p>
+          <p class="sample" style="font: var(--type-button);">See the solution</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 16px (1rem)</li><li>font-weight: 700</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 0%</li><li class="token">var(--type-button)</li><li class="token">Style: Button</li></ul></div>
+<div class="spec-block"><p class="label">Nav Link - Navbar links</p>
+          <p class="sample" style="font: var(--type-nav-link);">Work</p><ul class="spec-list"><li>font-family: "IBM Plex Sans"</li><li>font-size: 16px (1rem)</li><li>font-weight: 600</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 0%</li><li class="token">var(--type-nav-link)</li><li class="token">Style: Nav Link</li></ul></div>
+<div class="spec-block"><p class="label">Nav Brand - Navbar brand</p>
+          <p class="sample" style="font: var(--type-nav-brand);">FC STUDIO</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 17.6px (1.100rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 0%</li><li class="token">var(--type-nav-brand)</li><li class="token">Style: Nav Brand</li></ul></div>
+<div class="spec-block"><p class="label">Sticker - Tilted stickers on the hero art</p>
+          <p class="sample" style="font: var(--type-sticker);">SAVED TO FOOD FINDS!</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 14px (0.875rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 0%</li><li class="token">var(--type-sticker)</li><li class="token">Style: Sticker</li></ul></div>
+    </div>
+  </section>
+  <section class="doc-section" id="display-and-data" aria-labelledby="display-and-data-h">
+    <div class="container">
+      <p class="eyebrow">Text styles</p>
+      <h2 id="display-and-data-h">Display and data</h2>
+      <p class="section-intro">Special sizes for numbers, the cover and the spec annotations.</p>
+<div class="spec-block"><p class="label">Stat/Desktop - Big numbers in the research band</p>
+          <p class="sample" style="font: var(--type-stat-desktop);">5</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 51.2px (3.200rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1 (100%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-stat-desktop)</li><li class="token">Style: Stat/Desktop</li></ul></div>
+<div class="spec-block"><p class="label">Stat/Phone - Big numbers under 576px</p>
+          <p class="sample" style="font: var(--type-stat-phone);">96%</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 40px (2.500rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 1 (100%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-stat-phone)</li><li class="token">Style: Stat/Phone</li></ul></div>
+<div class="spec-block"><p class="label">Cover/Display - Cover pages only</p>
+          <p class="sample" style="font: var(--type-cover-display); font-size: clamp(72px, 14vw, 176px);">Quest</p><ul class="spec-list"><li>font-family: "Bungee"</li><li>font-size: 176px (11rem)</li><li>font-weight: 400</li><li>font-style: normal</li><li>line-height: 0.92 (92%)</li><li>letter-spacing: 0%</li><li class="token">var(--type-cover-display)</li><li class="token">Style: Cover/Display</li></ul></div>
+<div class="spec-block"><p class="label">Annotation/Label - Spec labels on Grids and Specs</p>
+          <p class="sample" style="font: var(--type-annotation-label);">24PX GUTTER</p><ul class="spec-list"><li>font-family: "IBM Plex Mono"</li><li>font-size: 12px (0.750rem)</li><li>font-weight: 600</li><li>font-style: normal</li><li>line-height: normal (auto)</li><li>letter-spacing: 0%</li><li class="token">var(--type-annotation-label)</li><li class="token">Style: Annotation/Label</li></ul></div>
+    </div>
+  </section>
+  <section class="doc-section" id="scale" aria-labelledby="scale-h">
+    <div class="container">
+      <p class="eyebrow">Responsive</p>
+      <h2 id="scale-h">The scale at each breakpoint</h2>
+      <p class="section-intro">Tokens switch automatically with a media query in <code>tokens.css</code>, matching the Desktop and Phone text styles in Figma.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Type scale</caption><thead><tr><th scope="col">Level</th><th scope="col">Desktop and tablet</th><th scope="col">Phone (under 576px)</th><th scope="col">rem</th></tr></thead><tbody><tr><td>H1</td><td>47.78px</td><td>35.2px</td><td>2.986rem / 2.2rem</td></tr><tr><td>H2</td><td>39.81px</td><td>29.6px</td><td>2.488rem / 1.85rem</td></tr><tr><td>H3</td><td>33.18px</td><td>25.6px</td><td>2.074rem / 1.6rem</td></tr><tr><td>H4</td><td>27.65px</td><td>27.65px</td><td>1.728rem</td></tr><tr><td>H5 / Card Title</td><td>23.04px</td><td>23.04px</td><td>1.44rem</td></tr><tr><td>Lead</td><td>19.2px</td><td>19.2px</td><td>1.2rem</td></tr><tr><td>Body</td><td>16px</td><td>16px</td><td>1rem</td></tr><tr><td>Small (Eyebrow, Tag, Caption)</td><td>13.33px</td><td>13.33px</td><td>0.833rem</td></tr></tbody></table></div><div class="code-block"><span class="code-title">tokens.css (text styles)</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="tokens.css (text styles) code"><code>/* ---------- Text styles (size / line height / tracking) ---------- */
+:root {
+  --type-desktop-h1: 400 47.78px/1.15 var(--font-display);
+  --type-desktop-h2: 400 39.81px/1.2 var(--font-display);
+  --type-desktop-h3: 400 33.18px/1.25 var(--font-display);
+  --type-desktop-h4: 400 27.65px/1.3 var(--font-display);
+  --type-phone-h1: 400 35.2px/1.15 var(--font-display);
+  --type-phone-h2: 400 29.6px/1.2 var(--font-display);
+  --type-phone-h3: 400 25.6px/1.25 var(--font-display);
+  --type-card-title: 400 23.04px/1.3 var(--font-display);
+  --type-h5: 700 23.04px/1.3 var(--font-body);
+  --type-lead: 400 19.2px/1.7 var(--font-body);
+  --type-body: 400 16px/1.7 var(--font-body);
+  --type-body-emphasis: italic 500 16px/1.7 var(--font-body);
+  --type-body-link: 400 16px/1.7 var(--font-body);
+  --type-eyebrow: 700 13.33px/normal var(--font-body);   /* tracking 12% */
+  --type-tag: 700 13.33px/normal var(--font-body);       /* tracking 4% */
+  --type-button: 700 16px/normal var(--font-body);
+  --type-nav-link: 600 16px/normal var(--font-body);
+  --type-quote: italic 400 19.2px/1.6 var(--font-body);
+  --type-caption: 400 13.33px/1.5 var(--font-body);
+  --type-code: 400 14px/1.5 var(--font-mono);
+  --type-nav-brand: 400 17.6px/normal var(--font-display);
+  --type-sticker: 400 14px/normal var(--font-display);
+  --type-stat-desktop: 400 51.2px/1 var(--font-display);
+  --type-stat-phone: 400 40px/1 var(--font-display);
+  --type-cover-display: 400 176px/.92 var(--font-display);
+  --type-annotation-label: 600 12px/normal var(--font-mono);</code></pre></div><div class="row g-4 mt-1"><div class="col-md-6"><div class="dodont do"><h3><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Do</h3><ul><li>Use one H1 per page, then go in order without skipping levels.</li><li>Keep paragraphs between 45 and 75 characters wide.</li><li>Set sizes in rem so browser zoom and text resizing work.</li></ul></div></div><div class="col-md-6"><div class="dodont dont"><h3><i class="bi bi-x-circle-fill" aria-hidden="true"></i> Don't</h3><ul><li>Set long paragraphs in Bungee; it is a display face.</li><li>Use all caps for anything longer than a label.</li><li>Go below 13.33px for text people need to read.</li></ul></div></div></div>
+    </div>
+  </section>
+
+<div class="container"><nav class="pager" aria-label="Previous and next stops"><a class="prev" href="../foundations/color.html"><span class="dir"><i class="bi bi-arrow-left" aria-hidden="true"></i> Previous stop</span><span class="ttl">1.1 Color</span></a><a class="next" href="../foundations/logo.html"><span class="dir">Next stop <i class="bi bi-arrow-right" aria-hidden="true"></i></span><span class="ttl">1.3 Logo</span></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<div id="copy-status" class="visually-hidden" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const live = document.getElementById('copy-status');
+  const say = m => { if (live) { live.textContent = ''; setTimeout(() => live.textContent = m, 30); } };
+  document.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const txt = btn.parentElement.querySelector('code').innerText;
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied!'; say('Code copied to clipboard'); }
+    catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => btn.textContent = 'Copy', 1600);
+  }));
+  document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.copy); say(btn.dataset.copy + ' copied'); btn.classList.add('copied'); setTimeout(() => btn.classList.remove('copied'), 1200); } catch {}
+  }));
+</script>
+
+</body>
+</html>

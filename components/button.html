@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Button | Side Quest Simple Design System</title>
+  <meta name="description" content="Button component: variants, states, CSS specifications and accessibility guidelines.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#FAF5D6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/tokens.css" rel="stylesheet">
+  <link href="../css/components.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar navbar-expand-lg fc-navbar sticky-top" aria-label="Design system">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" width="44" height="44">
+      <span>Design System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sdsNav" aria-controls="sdsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="sdsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dd-found" role="button" data-bs-toggle="dropdown" aria-expanded="false">Foundations</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-found"><li><a class="dropdown-item" href="../foundations/color.html">1.1 Color</a></li><li><a class="dropdown-item" href="../foundations/typography.html">1.2 Typography</a></li><li><a class="dropdown-item" href="../foundations/logo.html">1.3 Logo</a></li></ul></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" id="dd-comp" role="button" data-bs-toggle="dropdown" aria-expanded="false">Components</a><ul class="dropdown-menu fc-dropdown" aria-labelledby="dd-comp"><li><a class="dropdown-item active" href="../components/button.html" aria-current="page">2.1 Button</a></li><li><a class="dropdown-item" href="../components/navbar.html">2.2 Navbar</a></li><li><a class="dropdown-item" href="../components/card.html">2.3 Card</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="../patterns/index.html">Page Pattern</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-fc btn-fc-accent" href="../patterns/case-study.html">Live page <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="page-head">
+    <div class="container">
+      <div class="stop-pin"><span class="pin" aria-hidden="true"><span>2.1</span></span><span class="eyebrow">Components</span></div>
+      <h1>Button</h1>
+      <p class="lead">A chunky, pill-shaped Bootstrap button with a pop shadow that lifts on hover and squishes when pressed.</p>
+      <div><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>DESIGN.md &gt; Component Families &gt; Button</span><span class="source-chip"><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Type x State: 15 variants</span></div>
+      <nav class="toc" aria-label="On this page"><a href="#btn-overview">Variants</a><a href="#btn-specs">Specs</a><a href="#btn-code">Code</a><a href="#btn-a11y">Accessibility</a></nav>
+    </div>
+  </header>
+  <section class="doc-section" id="btn-overview" aria-labelledby="btn-overview-h">
+    <div class="container">
+      <p class="eyebrow">Component 2.1</p>
+      <h2 id="btn-overview-h">Variants and states</h2>
+      <p class="section-intro">The Figma <strong>Button</strong> set has 15 variants: <strong>Type</strong> (Primary, Secondary, Accent) x <strong>State</strong> (Default, Hover, Pressed, Focus, Disabled). It extends Bootstrap's <code>.btn</code>, so it keeps Bootstrap sizing and behavior.</p>
+<div class="demo-stage"><div class="state-table" role="table" aria-label="Button types and states"><div class="state-head" role="row"><span role="columnheader"><span class="visually-hidden">Type</span></span><span class="col-head" role="columnheader">Default</span><span class="col-head" role="columnheader">Hover</span><span class="col-head" role="columnheader">Pressed</span><span class="col-head" role="columnheader">Focus</span><span class="col-head" role="columnheader">Disabled</span></div><div class="state-row" role="row"><span class="row-head" role="rowheader">Primary</span><div class="cell" role="cell"><button type="button" class="btn btn-fc">Primary</button><span class="cell-label" aria-hidden="true">Default</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc is-hover" tabindex="-1">Primary</button><span class="cell-label" aria-hidden="true">Hover</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc is-pressed" tabindex="-1">Primary</button><span class="cell-label" aria-hidden="true">Pressed</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc is-focus" tabindex="-1">Primary</button><span class="cell-label" aria-hidden="true">Focus</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc" disabled aria-disabled="true" tabindex="-1">Primary</button><span class="cell-label" aria-hidden="true">Disabled</span></div></div><div class="state-row" role="row"><span class="row-head" role="rowheader">Secondary</span><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-secondary">Secondary</button><span class="cell-label" aria-hidden="true">Default</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-secondary is-hover" tabindex="-1">Secondary</button><span class="cell-label" aria-hidden="true">Hover</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-secondary is-pressed" tabindex="-1">Secondary</button><span class="cell-label" aria-hidden="true">Pressed</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-secondary is-focus" tabindex="-1">Secondary</button><span class="cell-label" aria-hidden="true">Focus</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-secondary" disabled aria-disabled="true" tabindex="-1">Secondary</button><span class="cell-label" aria-hidden="true">Disabled</span></div></div><div class="state-row" role="row"><span class="row-head" role="rowheader">Accent</span><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-accent">Accent</button><span class="cell-label" aria-hidden="true">Default</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-accent is-hover" tabindex="-1">Accent</button><span class="cell-label" aria-hidden="true">Hover</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-accent is-pressed" tabindex="-1">Accent</button><span class="cell-label" aria-hidden="true">Pressed</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-accent is-focus" tabindex="-1">Accent</button><span class="cell-label" aria-hidden="true">Focus</span></div><div class="cell" role="cell"><button type="button" class="btn btn-fc btn-fc-accent" disabled aria-disabled="true" tabindex="-1">Accent</button><span class="cell-label" aria-hidden="true">Disabled</span></div></div></div></div>
+<p class="small text-body-secondary mt-3 mb-0">The Hover, Pressed and Focus columns use helper classes (<code>.is-hover</code>, <code>.is-pressed</code>, <code>.is-focus</code>) so you can see each state at once. Try the real states on these:</p>
+<div class="d-flex flex-wrap gap-3 mt-3">
+  <a class="btn btn-fc" href="#btn-specs">See the specs <i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+  <button type="button" class="btn btn-fc btn-fc-secondary">Secondary</button>
+  <button type="button" class="btn btn-fc btn-fc-accent">Accent</button>
+</div>
+    </div>
+  </section>
+  <section class="doc-section" id="btn-specs" aria-labelledby="btn-specs-h">
+    <div class="container">
+      <p class="eyebrow">Specs</p>
+      <h2 id="btn-specs-h">CSS specifications</h2>
+      <p class="section-intro">Every value comes from a DESIGN.md token.</p>
+<div class="table-responsive"><table class="spec-table"><caption class="visually-hidden">Button specs</caption><thead><tr><th scope="col">Property</th><th scope="col">Value</th><th scope="col">Token</th></tr></thead><tbody><tr><td>Font</td><td>IBM Plex Sans Bold 16px</td><td><code>--type-button</code> (Button)</td></tr><tr><td>Padding</td><td>12px 24px</td><td><code>--space-12</code> <code>--space-24</code></td></tr><tr><td>Border</td><td>3px solid plum</td><td><code>--border-width</code> <code>--color-border-default</code></td></tr><tr><td>Radius</td><td>999px pill</td><td><code>--radius-button</code></td></tr><tr><td>Shadow</td><td>4px 4px 0 plum</td><td><code>--shadow-pop-sm</code> (Shadow/Pop SM)</td></tr><tr><td>Primary fill / text</td><td><span class="chip" style="background:#82204A"></span>#82204A / white, 9.3 : 1</td><td><code>--color-action-primary</code> <code>--color-text-on-primary</code></td></tr><tr><td>Secondary fill / text</td><td><span class="chip" style="background:#fff"></span>white / plum, 17.9 : 1</td><td><code>--color-bg-surface</code> <code>--color-text-default</code></td></tr><tr><td>Accent fill / text</td><td><span class="chip" style="background:#E8DB7D"></span>gold / plum, 12.6 : 1</td><td><code>--color-action-highlight</code> <code>--color-text-default</code></td></tr><tr><td>Hover</td><td>Lifts 2px, shadow grows to 6px, primary darkens</td><td><code>--color-action-primary-hover</code> <code>--shadow-pop</code></td></tr><tr><td>Pressed</td><td>Moves 4px into its shadow, shadow 0</td><td>-</td></tr><tr><td>Focus</td><td>3px teal outline, 4px offset</td><td><code>--color-border-focus</code></td></tr><tr><td>Disabled</td><td>Alice fill, muted text, faded border, no shadow</td><td><code>--color-bg-page</code> <code>--color-text-muted</code></td></tr><tr><td>Motion</td><td>transform, shadow, color 120ms ease</td><td>Off with prefers-reduced-motion</td></tr></tbody></table></div>
+    </div>
+  </section>
+  <section class="doc-section" id="btn-code" aria-labelledby="btn-code-h">
+    <div class="container">
+      <p class="eyebrow">Code</p>
+      <h2 id="btn-code-h">HTML and CSS</h2>
+      <p class="section-intro">Add <code>.btn .btn-fc</code> to a link or button, then a type modifier.</p>
+<div class="code-block"><span class="code-title">HTML</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="HTML code"><code>&lt;!-- Primary --&gt;
+&lt;a class="btn btn-fc" href="#solution"&gt;See the solution&lt;/a&gt;
+
+&lt;!-- Secondary and accent --&gt;
+&lt;button type="button" class="btn btn-fc btn-fc-secondary"&gt;Play the prototype&lt;/button&gt;
+&lt;a class="btn btn-fc btn-fc-accent" href="patterns/case-study.html"&gt;Live page&lt;/a&gt;
+
+&lt;!-- Disabled: use the attribute, not just the class --&gt;
+&lt;button type="button" class="btn btn-fc" disabled&gt;Coming soon&lt;/button&gt;</code></pre></div><div class="code-block"><span class="code-title">components.css (Button)</span><button class="copy-btn" type="button">Copy</button><pre tabindex="0" aria-label="components.css (Button) code"><code>/* ---------- Component: Button (variants) ---------- */
+.btn-fc {
+  --fc-btn-bg: var(--color-action-primary);
+  --fc-btn-color: var(--color-text-on-primary);
+  font: var(--type-button);
+  padding: var(--space-12) var(--space-24);
+  border: var(--border-default);
+  border-radius: var(--radius-button);
+  background: var(--fc-btn-bg);
+  color: var(--fc-btn-color);
+  box-shadow: var(--shadow-pop-sm);
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+}
+.btn-fc:hover, .btn-fc.is-hover {
+  background: var(--color-action-primary-hover);
+  color: var(--fc-btn-color);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-pop);
+}
+.btn-fc:active, .btn-fc.is-pressed {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--color-border-default);
+}
+.btn-fc:focus-visible, .btn-fc.is-focus {
+  outline: 3px solid var(--color-border-focus);
+  outline-offset: 4px;
+}
+.btn-fc:disabled, .btn-fc.disabled {
+  background: var(--color-bg-page);
+  color: var(--color-text-muted);
+  border-color: rgba(35, 17, 35, .35);
+  box-shadow: none;
+  opacity: 1;
+}
+.btn-fc-secondary { --fc-btn-bg: var(--color-bg-surface); --fc-btn-color: var(--color-text-default); }
+.btn-fc-secondary:hover, .btn-fc-secondary.is-hover { background: var(--color-gold-100); }
+.btn-fc-accent { --fc-btn-bg: var(--color-action-highlight); --fc-btn-color: var(--color-text-default); }
+.btn-fc-accent:hover, .btn-fc-accent.is-hover { background: var(--color-gold-100); }</code></pre></div>
+    </div>
+  </section>
+  <section class="doc-section" id="btn-a11y" aria-labelledby="btn-a11y-h">
+    <div class="container">
+      <p class="eyebrow">Accessibility</p>
+      <h2 id="btn-a11y-h">Accessibility guidelines</h2>
+      <p class="section-intro">Buttons are how people move through the case study, so they need to work for keyboard, screen reader and touch users.</p>
+<ul class="a11y-list"><li><i class="bi bi-hand-index" aria-hidden="true"></i><div><strong>Use the right element<span class=wcag>4.1.2</span></strong>Use <code>&lt;a&gt;</code> when it goes to a page or section and <code>&lt;button&gt;</code> when it does something on the page. Both get the same styles.</div></li><li><i class="bi bi-fonts" aria-hidden="true"></i><div><strong>Say what happens<span class=wcag>2.4.4</span><span class=wcag>2.5.3</span></strong>Write labels like "See the solution", not "Click here". The visible text must be part of the accessible name. Icons get <code>aria-hidden="true"</code>.</div></li><li><i class="bi bi-circle-half" aria-hidden="true"></i><div><strong>Keep contrast<span class=wcag>1.4.3</span><span class=wcag>1.4.11</span></strong>Every label passes AA: white on raspberry is 9.3 : 1, plum on gold is 12.6 : 1. The 3px plum border keeps the shape visible on any background.</div></li><li><i class="bi bi-bullseye" aria-hidden="true"></i><div><strong>Show focus<span class=wcag>2.4.7</span><span class=wcag>2.4.11</span></strong>The 3px teal outline with a 4px offset is never removed. It shows on keyboard focus only, using <code>:focus-visible</code>.</div></li><li><i class="bi bi-phone" aria-hidden="true"></i><div><strong>Big enough to tap<span class=wcag>2.5.8</span></strong>Buttons are 51px tall, well above the 24px minimum target size.</div></li><li><i class="bi bi-slash-circle" aria-hidden="true"></i><div><strong>Disable for real<span class=wcag>4.1.2</span></strong>Use the <code>disabled</code> attribute on buttons. For links, remove the <code>href</code> and add <code>aria-disabled="true"</code>. Explain nearby why it is unavailable.</div></li><li><i class="bi bi-pause-circle" aria-hidden="true"></i><div><strong>Respect reduced motion<span class=wcag>2.3.3</span></strong>The lift and press animations turn off when someone has reduced motion turned on.</div></li></ul><div class="row g-4 mt-1"><div class="col-md-6"><div class="dodont do"><h3><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Do</h3><ul><li>Use one primary button per section.</li><li>Pair a primary with a secondary for two choices.</li><li>Keep labels short: 1 to 4 words.</li></ul></div></div><div class="col-md-6"><div class="dodont dont"><h3><i class="bi bi-x-circle-fill" aria-hidden="true"></i> Don't</h3><ul><li>Put two primary buttons side by side.</li><li>Use the accent button for destructive actions.</li><li>Remove the focus outline or the border.</li></ul></div></div></div>
+    </div>
+  </section>
+
+<div class="container"><nav class="pager" aria-label="Previous and next stops"><a class="prev" href="../foundations/logo.html"><span class="dir"><i class="bi bi-arrow-left" aria-hidden="true"></i> Previous stop</span><span class="ttl">1.3 Logo</span></a><a class="next" href="../components/navbar.html"><span class="dir">Next stop <i class="bi bi-arrow-right" aria-hidden="true"></i></span><span class="ttl">2.2 Navbar</span></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+    <img src="../assets/fc-studio-logo-reverse.svg" alt="FC Studio - design, research, strategy">
+    <p class="mb-0">Made with Figma, Bootstrap 5, and Claude. <a href="#top">Back to top</a></p>
+  </div>
+</footer>
+<div id="copy-status" class="visually-hidden" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const live = document.getElementById('copy-status');
+  const say = m => { if (live) { live.textContent = ''; setTimeout(() => live.textContent = m, 30); } };
+  document.querySelectorAll('.copy-btn').forEach(btn => btn.addEventListener('click', async () => {
+    const txt = btn.parentElement.querySelector('code').innerText;
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied!'; say('Code copied to clipboard'); }
+    catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => btn.textContent = 'Copy', 1600);
+  }));
+  document.querySelectorAll('[data-copy]').forEach(btn => btn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(btn.dataset.copy); say(btn.dataset.copy + ' copied'); btn.classList.add('copied'); setTimeout(() => btn.classList.remove('copied'), 1200); } catch {}
+  }));
+</script>
+
+</body>
+</html>
